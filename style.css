@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #444;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#formWrapper {
+  width: 350px;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#usePositionBtn {
+  width: 400px;
+}
+
+[type="text"],
+[type="number"],
+[type="date"],
+button {
+  display: inline-block;
+  -webkit-appearance: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: .5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+}
+
+[type="text"] {
+  width: 100%;
+}
+
+
+#listWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #222;
+}
+
+ul {
+  padding: 0;
+}
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+li {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+li:hover {
+  background: rgba(179, 215, 255, 0.52);
+}
+
+li span {
+  display: inline-block;
+  padding: .5rem;
+  width: 250px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+li span:focus {
+  outline: 0;
+  border: 2px solid #007bff;
+  background: rgba(179, 207, 255, 0.52)
+}

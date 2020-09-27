@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Auxi-lium</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="root">
+    <div>
+      <div id="formWrapper">
+        <form id="taskForm" autocomplete="off">
+          <input id="taskTitle" type="text" placeholder="taskTitle" />
+          <input id="taskDescription" type="text" placeholder="taskDescription" />
+          <input id="taskOwnerName" type="text" placeholder="taskOwnerName" />
+          <input id="taskEstimatedTimeHours" type="number" placeholder="taskEstimatedTimeHours" />
+          <input id="taskRewardDKK" type="number" placeholder="taskRewardDKK" />
+          <select id="taskCategory">
+            <option value="Ingen" selected>Vælg kategori</option>
+            <option value="Flytning">Flytning</option>
+            <option value="Kørsel">Kørsel</option>
+            <option value="Andet">Andet</option>
+          </select>
+          <input id="taskDeadline" type="date" placeholder="taskDeadline" />
+          
+          <div>
+            <input id="pos" type="text" disabled />
+            <span style="width: 20px;"></span>
+            <button id="usePositionBtn">Brug min position</button>
+          </div>
+
+          <button type="submit">Gem opgave</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="listWrapper">
+      <h2>Auxi-lium Opgaver</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>
